@@ -1,9 +1,9 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'nuxt-app',
+    title: 'Jaco',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'pt-br'
     },
     meta: [
       { charset: 'utf-8' },
@@ -12,7 +12,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/logo.png' },
     ]
   },
 
@@ -25,7 +25,15 @@ export default {
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+  components: {
+    dirs: [
+      { path: '~/components/direct-chat', extensions: ['vue'] },
+      { path: '~/components/home-top-bar', extensions: ['vue'] },
+      { path: '~/components/server-list', extensions: ['vue'] },
+      { path: '~/components/user-list', extensions: ['vue'] },
+      { path: '~/components/message', extensions: ['vue'] },
+    ]
+  },
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
