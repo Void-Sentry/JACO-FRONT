@@ -25,7 +25,16 @@ module.exports = {
       sans: ['Graphik', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        svg: "url('/static/ovini.svg')"
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-hero-patterns'),
+  ],
 }
+
+// background-color: #d9e4ec;
+// background-image: ;
