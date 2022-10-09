@@ -12,24 +12,5 @@
         <direct-chat class="mt-auto mb-px" @sendMessage="receiveMessage" />
     </div>
 </template>
-<script>
-export default {
-    layout: 'chat',
-    data() {
-        return {
-            chat: true,
-            profile: {
-                name: 'Oséias',
-                date: null,
-                photo: null,
-                message: null
-            }
-        }
-    },
-    methods: {
-        receiveMessage(text) {
-            this.profile.message = text
-        }
-    }
-}
+<script src="./chat.js">
 </script>
