@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full h-full flex flex-col">
+    <div class="flex flex-col">
         <home-top-bar :type="chat" />
         <div class="flex flex-col-reverse h-full">
             <ul class="mx-1.5">

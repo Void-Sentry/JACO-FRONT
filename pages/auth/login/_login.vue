@@ -9,25 +9,24 @@
             <div class="mt-auto mb-px mx-auto">
                 <h1><span class="text-secondary">Acesse</span> ou <span class="text-secondary">cadastre</span><br /> uma
                     conta
-                    <span class="text-secondary">Jaco</span>!
+                    <NuxtLink to="/"><span class="text-secondary">Jaco</span>!</NuxtLink>
                 </h1>
             </div>
             <div class="mt-40 mb-px mx-auto">
-                <input type="email"
+                <input v-model="form.mail" type="email"
                     class="w-64 h-12 rounded-3xl drop-shadow-md text-center text-lg invalid:border-error"
                     placeholder="exemplo@exemplo.com" />
             </div>
             <div class="mt-4 mb-px mx-auto text-lg">
-                <input type="password" class="w-64 h-12 rounded-3xl drop-shadow-md text-center text-lg"
-                    placeholder="senha" />
+                <input v-model="form.pass" type="password" @keypress.enter="login"
+                    class="w-64 h-12 rounded-3xl drop-shadow-md text-center text-lg" placeholder="senha" />
             </div>
             <div class="mt-8 mb-auto mx-auto text-lg">
                 <NuxtLink to="register">
                     <button class="mr-px text-primary w-24 h-12">Cadastrar</button>
                 </NuxtLink>
-                <NuxtLink to="/home"><button
-                        class="ml-5 rounded-3xl bg-primary text-quartenary w-24 h-12 drop-shadow-md">Entrar</button>
-                </NuxtLink>
+                <button class="ml-5 rounded-3xl bg-primary text-quartenary w-24 h-12 drop-shadow-md"
+                    @click.stop="login">Entrar</button>
             </div>
         </div>
     </div>

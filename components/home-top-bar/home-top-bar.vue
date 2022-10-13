@@ -1,5 +1,5 @@
 <template>
-    <div v-if="!type" class="bg-tertiary w-full h-14 rounded-t-3xl flex flex-row">
+    <div v-if="!type" class="bg-tertiary w-full h-16 rounded-t-3xl flex flex-row">
         <div class="my-auto ml-9 mr-px">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#385E72"
                 class="w-10 h-10">
