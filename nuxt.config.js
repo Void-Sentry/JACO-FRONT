@@ -16,6 +16,15 @@ export default {
     ]
   },
 
+  router: {
+    extendRoutes(routes) {
+      routes.push({
+        path: '/',
+        component: 'pages/welcome/_index.vue'
+      })
+    }
+  },
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
   ],
@@ -32,6 +41,8 @@ export default {
       { path: '~/components/server-list', extensions: ['vue'] },
       { path: '~/components/user-list', extensions: ['vue'] },
       { path: '~/components/message', extensions: ['vue'] },
+      { path: '~/components/alerts/handling', extensions: ['vue'] },
+      { path: '~/components/profile', extensions: ['vue'] },
     ]
   },
 
@@ -44,7 +55,12 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/axios',
   ],
+
+  axios: {
+    baseUrl: 'http://localhost:8000/api/'
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
@@ -57,13 +73,7 @@ export default {
   },
   googleFonts: {
     families: {
-      'Architects Daughter': true,
-      // or:
-      // Lato: [100, 300],
-      // Raleway: {
-      //   wght: [100, 400],
-      //   ital: [100]
-      // },
+      'Architects Daughter': true
     },
   },
 }
