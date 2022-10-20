@@ -13,7 +13,7 @@
             <div class="h-px w-6 bg-primary my-7 mx-auto"></div>
         </div>
         <div class="h-max overflow-y-auto">
-            <button class="bg-[#D9D9D9] w-20 h-20 rounded-full mb-7 m-auto flex flex-col" v-for="n in 20"></button>
+            <button class="bg-[#D9D9D9] w-20 h-20 rounded-full mb-7 m-auto flex flex-col" v-for="n in 2"></button>
         </div>
         <div>
             <div class="h-px w-6 bg-primary my-7 mx-auto"></div>

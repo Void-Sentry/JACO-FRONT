@@ -1,6 +1,12 @@
 export default {
     layout: 'base',
-    mounted() {
-        console.log(this.$store.state.user.user)
+    data() {
+        return {
+            disponibility: false,
+            everyone: false,
+            pending: false,
+            blocked: false,
+            add: false
+        }
     }
 }

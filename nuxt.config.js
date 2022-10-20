@@ -17,6 +17,7 @@ export default {
   },
 
   router: {
+    middleware: 'auth',
     extendRoutes(routes) {
       routes.push({
         path: '/',
@@ -43,6 +44,7 @@ export default {
       { path: '~/components/message', extensions: ['vue'] },
       { path: '~/components/alerts/handling', extensions: ['vue'] },
       { path: '~/components/profile', extensions: ['vue'] },
+      { path: '~/components/add-friend', extensions: ['vue'] },
     ]
   },
 

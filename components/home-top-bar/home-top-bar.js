@@ -1,4 +1,9 @@
 export default {
     name: 'home-top-bar',
-    props: ['type']
+    props: ['type'],
+    methods: {
+        event(eventName) {
+            this.$emit(eventName)
+        }
+    }
 }
