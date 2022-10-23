@@ -1,4 +1,11 @@
 export default {
     name: 'pending',
-    layout: 'base'
+    layout: 'base',
+    data () {
+        const [title, placeholder] = ['solicitações pendentes', 'Pesquisar']
+        return {
+            title,
+            placeholder
+        }
+    }
 }
