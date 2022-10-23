@@ -43,6 +43,7 @@ export default {
       { path: '~/components/message', extensions: ['vue'] },
       { path: '~/components/alerts/handling', extensions: ['vue'] },
       { path: '~/components/profile', extensions: ['vue'] },
+      { path: '~/components/friend', extensions: ['vue'] },
     ]
   },
 

@@ -1,7 +1,7 @@
 <template>
     <div class="relative bg-quartenary w-28 rounded-3xl m-1.5 flex flex-col">
         <div>
-            <NuxtLink to="/home">
+            <NuxtLink to="/friends/online">
                 <button class="bg-tertiary w-20 h-20 rounded-full mt-20 m-auto flex flex-col">
                     <svg class="w-12 h-12 m-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                         strokeWidth="1.5" stroke="#385E72">
@@ -13,7 +13,7 @@
             <div class="h-px w-6 bg-primary my-7 mx-auto"></div>
         </div>
         <div class="h-max overflow-y-auto">
-            <button class="bg-[#D9D9D9] w-20 h-20 rounded-full mb-7 m-auto flex flex-col" v-for="n in 20"></button>
+            <button class="bg-[#D9D9D9] w-20 h-20 rounded-full mb-7 m-auto flex flex-col" v-for="n in 2"></button>
         </div>
         <div>
             <div class="h-px w-6 bg-primary my-7 mx-auto"></div>

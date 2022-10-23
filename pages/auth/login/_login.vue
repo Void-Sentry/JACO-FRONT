@@ -13,7 +13,7 @@
                 </h1>
             </div>
             <div class="mt-40 mb-px mx-auto">
-                <input v-model="form.mail" type="email"
+                <input v-model="form.mail" type="email" @keypress.enter="login"
                     class="w-64 h-12 rounded-3xl drop-shadow-md text-center text-lg invalid:border-error"
                     placeholder="exemplo@exemplo.com" />
             </div>

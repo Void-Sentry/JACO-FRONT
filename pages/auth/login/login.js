@@ -9,12 +9,11 @@ export default {
         }
     },
     methods: {
-        login() {
-            this.$axios.post('auth/login', this.form).then(res => {
-                this.$axios.setToken(res.data.item.token, 'Bearer')
-                this.$store.commit('user/add', res.data.item.user)
-                this.$router.push('/home')
-            }).catch(() => {})
+        async login() {
+            const { data } =  await this.$axios.post('auth/login', this.form)
+            this.$axios.setToken(data.item.token, 'Bearer')
+            this.$store.commit('user/add', data.item.user)
+            this.$router.push('/friends/online')
         }
     }
 }

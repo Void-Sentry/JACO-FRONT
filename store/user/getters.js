@@ -1,6 +1,5 @@
 export default {
     user (state) {
-        console.log('state')
         return state.user
     }
 
