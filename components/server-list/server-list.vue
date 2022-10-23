@@ -1,7 +1,7 @@
 <template>
     <div class="relative bg-quartenary w-28 rounded-3xl m-1.5 flex flex-col">
         <div>
-            <NuxtLink to="/home">
+            <NuxtLink to="/friends/online">
                 <button class="bg-tertiary w-20 h-20 rounded-full mt-20 m-auto flex flex-col">
                     <svg class="w-12 h-12 m-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                         strokeWidth="1.5" stroke="#385E72">

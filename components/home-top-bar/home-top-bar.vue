@@ -10,19 +10,29 @@
         <div class="flex flex-row text-xl">
             <p class="my-auto mx-3.5 text-primary">Amigos</p>
             <div class="my-auto h-6 w-px bg-primary"></div>
-            <button class="my-auto mx-3.5 text-primary hover:underline">Disponível</button>
-            <button class="my-auto text-primary hover:underline">Todos</button>
-            <button class="my-auto mx-3.5 text-primary hover:underline">Pendente</button>
-            <button class="my-auto text-primary hover:underline">Bloqueado</button>
+            <NuxtLink to="/friends/online" class="my-auto mx-3.5 text-primary hover:underline">
+                <button>Disponível</button>
+            </NuxtLink>
+            <NuxtLink to="/friends/everyone" class="my-auto text-primary hover:underline">
+                <button>Todos</button>
+            </NuxtLink>
+            <NuxtLink to="/friends/pending" class="my-auto mx-3.5 text-primary hover:underline">
+                <button>Pendente</button>
+            </NuxtLink>
+            <NuxtLink to="/friends/blocked" class="my-auto text-primary hover:underline">
+                <button>Bloqueado</button>
+            </NuxtLink>
         </div>
-        <button @click.stop="event('add')" class="transition ease-in-out text-success my-auto ml-auto mr-9 hover:underline flex flex-row text-xl">
-            <p class="my-auto mr-1.5">Adicionar amigo</p>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#4CAF50"
-                class="w-10 h-10 my-auto">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M19 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 0110.374 21c-2.331 0-4.512-.645-6.374-1.766z" />
-            </svg>
-        </button>
+        <NuxtLink to="/friends/add" class="transition ease-in-out text-success my-auto ml-auto mr-9 hover:underline text-xl">
+            <button class="flex flex-row">
+                <p class="my-auto mr-1.5">Adicionar amigo</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#4CAF50"
+                    class="w-10 h-10 my-auto">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M19 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 0110.374 21c-2.331 0-4.512-.645-6.374-1.766z" />
+                </svg>
+            </button>
+        </NuxtLink>
     </div>
     <div v-else class="bg-tertiary w-full h-16 rounded-t-3xl flex flex-row">
         <div class="w-12 h-12 rounded-full bg-[#D9D9D9] ml-9 my-auto"></div>
