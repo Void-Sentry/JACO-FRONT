@@ -10,8 +10,8 @@
         <div class="flex flex-row text-xl">
             <p class="my-auto mx-3.5 text-primary">Amigos</p>
             <div class="my-auto h-6 w-px bg-primary"></div>
-            <NuxtLink to="/friends/online" class="my-auto mx-3.5 text-primary hover:underline">
-                <button>Disponível</button>
+            <NuxtLink to="/friends/online" class="my-auto mx-3.5 text-primary">
+                <button class="focus:underline">Disponível</button>
             </NuxtLink>
             <NuxtLink to="/friends/everyone" class="my-auto text-primary hover:underline">
                 <button>Todos</button>
