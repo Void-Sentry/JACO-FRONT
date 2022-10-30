@@ -6,5 +6,8 @@ export default {
             mail: mail,
             born: born
         }
+    },
+    setUser (state) {
+        Object.assign(state, { user: null })
     }
 }
