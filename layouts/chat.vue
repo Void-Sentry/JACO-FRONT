@@ -5,4 +5,4 @@
         <user-list />
     </div>
 </template>
-<script src="./chat.js"></script>
+<script src="./javascript/chat.js"></script>

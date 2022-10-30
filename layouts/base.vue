@@ -8,4 +8,4 @@
         <user-list />
     </div>
 </template>
-<script src="./base.js"></script>
+<script src="./javascript/base.js"></script>

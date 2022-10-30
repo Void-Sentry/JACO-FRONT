@@ -13,7 +13,7 @@
         </div>
         <h1 class="uppercase" v-html="title"></h1>
         <div class="overflow-y-auto">
-            <friend v-for="n in 50" key="1"/>
+            <friend v-for="n in friends" :key="n.id" :friend="n" />
         </div>
     </div>
 </template>
