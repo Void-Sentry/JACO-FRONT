@@ -12,5 +12,10 @@ export default {
             placeholder,
             friends: []
         }
+    },
+    methods: {
+        async accept(id) {
+            await this.$axios.patch(`friend/accept_friend/${id}`)
+        }
     }
 }

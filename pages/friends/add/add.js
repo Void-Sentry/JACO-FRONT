@@ -13,6 +13,15 @@ export default {
             subtitle,
             add,
             placeholder,
+            input: ''
+        }
+    },
+    methods: {
+        async send() {
+            await this.$axios.post('friend', {
+                user_from: this.$store.getters['user/user'].id,
+                user_to: this.input
+            })
         }
     }
 }
