@@ -25,5 +25,8 @@ export default {
     },
     addPendingFriends (state, item) {
         state.pending.push(item)
+    },
+    reset_id_friends(state) {
+        state.id_friends = []
     }
 }

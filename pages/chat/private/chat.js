@@ -15,5 +15,9 @@ export default {
         receiveMessage(text) {
             this.profile.message = text
         }
+    },
+    mounted() {
+        
+        console.log(this.$route.params.chat)
     }
 }
