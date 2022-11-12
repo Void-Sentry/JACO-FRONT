@@ -36,7 +36,7 @@
     </div>
     <div v-else class="bg-tertiary w-full h-16 rounded-t-3xl flex flex-row">
         <div class="w-12 h-12 rounded-full bg-[#D9D9D9] ml-9 my-auto"></div>
-        <p class="m-auto text-xl text-primary">Nome do meliante</p>
+        <p class="m-auto text-xl text-primary" v-html="name"></p>
         <button class=" my-auto mr-9 hover:bg-secondary hover:rounded-full">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#385E72"
                 class="w-10 h-10">

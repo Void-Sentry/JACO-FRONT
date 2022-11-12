@@ -1,4 +1,4 @@
 export default {
     name: 'message',
-    props: ['profile']
+    props: ['message', 'user_from']
 }

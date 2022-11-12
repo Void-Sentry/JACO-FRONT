@@ -20,10 +20,16 @@ export default {
     storeIdFriends (state, item) {
         state.id_friends.indexOf(item.id) === -1 && state.id_friends.push(item)
     },
+    // convertToJSON(state, item) {
+    //     state,id_friends = item
+    // },
     removePendingFriends (state) {
         state.pending = []
     },
     addPendingFriends (state, item) {
         state.pending.push(item)
+    },
+    reset_id_friends(state) {
+        state.id_friends = []
     }
 }
