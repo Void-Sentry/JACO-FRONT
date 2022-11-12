@@ -3,21 +3,20 @@ export default {
     data() {
         return {
             chat: true,
-            profile: {
-                name: 'Oséias',
-                date: null,
-                photo: null,
-                message: null
-            }
+            messages: [],
+            aux: []
         }
     },
     methods: {
-        receiveMessage(text) {
-            this.profile.message = text
+        async receiveMessage() {
+            const { item } = await this.$axios.$get(`chat/private/show/${this.$route.params.chat}`)
+            console.log(item)
+            this.messages = item.messages
+            this.aux = item
         }
     },
     mounted() {
-        
-        console.log(this.$route.params.chat)
+        this.receiveMessage()
     }
+
 }
