@@ -2,7 +2,7 @@
     <div class="h-auto px-12 text-primary flex flex-col">
         <div class="my-4 w-full bg-tertiary rounded-xl flex flex-row">
             <input class="mx-1.5 w-full rounded-xl bg-tertiary h-12 placeholder:text-primary focus:outline-none"
-                :placeholder="placeholder" />
+                :placeholder="placeholder" v-model="search" />
             <button class="mr-1.5 my-auto text-success">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="#385E72" class="w-6 h-6">
@@ -13,7 +13,7 @@
         </div>
         <h1 class="uppercase" v-html="title"></h1>
         <div class="overflow-y-auto">
-            <friend v-for="n in friends" :key="n.id" :friend="n" />
+            <friend v-for="n in filtered" :key="n.id" :friend="n" />
         </div>
     </div>
 </template>
