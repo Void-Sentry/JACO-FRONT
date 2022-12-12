@@ -1,10 +1,10 @@
 export default {
     reset_state({ commit }) {
         commit('set_chats', [])
-    }
-    // chats({ commit, getters }) {
-    //     console.log(getters['friends'])
+    },
+    chats({ commit, getters }) {
+        console.log(getters['friends'])
 
-    //     const data = getters['friends']
-    // }
+        const data = getters['friends']
+    }
 }
