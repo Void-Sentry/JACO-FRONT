@@ -4,7 +4,7 @@
         <div class="flex flex-col-reverse h-full overflow-y-auto">
             <ul class="mx-1.5">
                 <li v-for="n in messages">
-                    <message :message="n.message" :user_from="aux.friend?.user_from.id === $store.getters['user/user'].id ? aux.friend?.user_to.name : aux.friend?.user_from.name" />
+                    <message :message="n.message" :user_from="n.user_from.name" />
                 </li>
             </ul>
         </div>
