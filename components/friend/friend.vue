@@ -4,7 +4,13 @@
         <div class="flex flex-row">
             <div class="my-auto w-12 h-12 bg-[#D9D9D9] rounded-full flex flex-row"></div>
             <h1 class="ml-1.5 my-auto" v-html="friend.name"></h1>
-            <button class="mr-4 my-auto ml-auto" @click.stop="remove">
+            <button class="mr-4 my-auto ml-auto" @click.stop="block">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" 
+                        d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                </svg>
+            </button>
+            <button class="mr-4 my-auto ml-px" @click.stop="remove">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="#F44336" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round"

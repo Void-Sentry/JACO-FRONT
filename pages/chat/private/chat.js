@@ -10,7 +10,6 @@ export default {
     methods: {
         async receiveMessage() {
             const { item } = await this.$axios.$get(`chat/private/show/${this.$route.params.chat}`)
-            console.log(item)
             this.messages = item.messages
             this.aux = item
         }
@@ -18,5 +17,4 @@ export default {
     mounted() {
         this.receiveMessage()
     }
-
 }
