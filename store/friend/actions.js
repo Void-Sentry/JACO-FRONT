@@ -26,6 +26,6 @@ export default {
     async pending({ dispatch, commit }) {
         const { data } = await this.$axios.get(`friend/pending/${this.app.store.state.user.user.id}`)
         dispatch('resetPendingList')
-        data.item.map(arr => commit('addPendingFriends', arr.pending))
+        data.item.map(arr => commit('addPendingFriends', { id: arr.id, pending: arr.pending }))
     }
 }

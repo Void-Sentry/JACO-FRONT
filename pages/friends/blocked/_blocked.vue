@@ -4,10 +4,10 @@
         <div class="overflow-y-auto">
             <div class="w-full flex flex-col my-4">
                 <div class="h-px w-full bg-tertiary mb-4"></div>
-                <div class="flex flex-row">
+                <div class="flex flex-row" v-for="n in friends">
                     <div class="my-auto w-12 h-12 bg-[#D9D9D9] rounded-full flex flex-row"></div>
-                    <h1 class="ml-1.5 my-auto">nome</h1>
-                    <button class="mr-4 my-auto ml-auto">
+                    <h1 class="ml-1.5 my-auto" v-html="n.user_to.name || n.user_from.name"></h1>
+                    <button class="mr-4 my-auto ml-auto" @click.stop="unblock(n)">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="#4CAF50" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
